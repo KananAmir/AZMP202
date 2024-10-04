@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html table</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid teal;
+      }
+      th,
+      td {
+        padding: 5px 10px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AZMP202 Studemts Table</h1>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">First Name</th>
+          <!-- <th>Last Name</th> -->
+          <th>University</th>
+          <th>Faculty</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Elcan</td>
+          <td>Aydamirov</td>
+          <td>Harvard</td>
+          <td>IT</td>
+          <td>96</td>
+        </tr>
+        <tr>
+          <td>Kanan</td>
+          <td>Qadirov</td>
+          <td rowspan="2">Azmiu</td>
+          <td>IT</td>
+          <td>51</td>
+        </tr>
+        <tr>
+          <td>Aslan</td>
+          <td>Mammadov</td>
+          <!-- <td>Azmiu</td> -->
+          <td>IT</td>
+          <td>51</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Awerage GPA</th>
+          <th colspan="4">87.5</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
