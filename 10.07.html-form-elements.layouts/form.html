@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Form elements</title>
+  </head>
+  <body>
+    <h1>Student Form</h1>
+    <form>
+      <input
+        type="text"
+        placeholder="enter ur fullname"
+        required
+        minlength="4"
+        maxlength="15"
+        name="fullname"
+        id="fullname"
+      />
+      <br />
+      <input
+        type="number"
+        placeholder="enter ur age"
+        min="18"
+        max="65"
+        name="age"
+      />
+
+      <br />
+      <label for="email">Email: </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="test@code.edu.az"
+        required
+      />
+      <br />
+
+      <label for="color">Select ur fav color</label>
+      <input type="color" id="color" name="color" />
+      <br />
+      <input type="password" placeholder="password" name="password" />
+      <br />
+
+      <!-- <input type="date" /> -->
+      <input type="datetime-local" />
+
+      <br />
+      <label for="profile-image">Upload Profile Image</label>
+      <input type="file" id="profile-image" accept="image/png" />
+
+      <br />
+      <input type="range" min="0" max="10" step="2" />
+      <br />
+      <input type="search" placeholder="search here.." />
+
+      <br />
+      <input
+        type="url"
+        name="github-url"
+        id="github-url"
+        placeholder="enter ur guthub profile url"
+      />
+      <br />
+
+      <label for="">Select your skills:</label>
+      <br />
+      <input type="checkbox" name="" id="html" />
+      <label for="html">HTML</label>
+      <br />
+      <input type="checkbox" name="" id="css" checked />
+      <label for="css">CSS</label>
+      <br />
+      <input type="checkbox" name="" id="js" />
+      <label for="js">JS</label>
+      <br />
+
+      <label for="">Gender:</label>
+      <br />
+
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" checked />
+      <label for="female">Female</label>
+
+      <hr />
+      <label for="">Select Language</label>
+      <select name="lang" id="lang">
+        <option value="az">Azerbaijan</option>
+        <option value="en" selected>English</option>
+        <option value="ru">Russian</option>
+      </select>
+
+      <hr />
+
+      <!-- <select name="city" id="city">
+        <option value="" disabled selected>Select City</option>
+        <option value="baku">Baku</option>
+        <option value="london">London</option>
+        <option value="moscow">Moscow</option>
+      </select> -->
+
+      <select name="city" id="city">
+        <option value="" selected hidden>Select City</option>
+        <option value="baku">Baku</option>
+        <option value="london">London</option>
+        <option value="moscow">Moscow</option>
+      </select>
+
+      <br />
+
+      <textarea
+        name="message"
+        id="message"
+        placeholder="your message here.."
+        rows="5"
+        cols="20"
+      ></textarea>
+
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" name="" id="" value="Clear" />
+      <br />
+      <!-- <button disabled>Click</button> -->
+      <!-- <button type="submit">Submit</button>
+        <button type="reset">Clear</button> -->
+    </form>
+  </body>
+</html>
