@@ -1,0 +1,63 @@
+h1 {
+  color: red;
+}
+.heading {
+  color: blue;
+}
+#heading {
+  background-color: #e99a9a;
+}
+
+.bg-teal.text {
+  background-color: teal;
+}
+
+.text {
+  background-color: red;
+  font-size: 2rem;
+}
+
+p.parag {
+  color: red;
+  font-size: 2.5rem;
+}
+
+strong,
+em,
+.info {
+  font-size: 4rem;
+  color: orange;
+}
+
+/* em {
+  font-size: 4rem;
+  color: orange;
+} */
+
+/* .team .team-members .member h2 {
+  color: palevioletred;
+} */
+.team h2 {
+  color: palevioletred;
+}
+.team .team-members > h2 {
+  color: palevioletred;
+}
+
+.team-members {
+  border: 1px solid red;
+}
+
+/* .team-members + p {
+  background-color: green;
+} */
+.team-members ~ p {
+  background-color: green;
+}
+
+
+[target="_blank"]{
+    color: yellow;
+}
+
+/* pseudo classes vs pseudo elements */

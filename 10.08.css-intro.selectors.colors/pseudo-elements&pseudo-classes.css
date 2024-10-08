@@ -1,0 +1,118 @@
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  background-color: burlywood;
+}
+
+.card:hover .title {
+  color: red;
+}
+.card p {
+  transition: color 2s;
+  font-weight: bold;
+}
+.card:hover p {
+  color: green;
+  font-size: 1.5rem;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+input:valid {
+  border: 2px solid black;
+}
+
+input#search:focus {
+  color: red;
+  background-color: yellow;
+}
+
+#search::placeholder {
+  color: green;
+}
+#search:focus::placeholder {
+  color: red;
+}
+
+/* .tech-list li:first-child {
+  background-color: teal;
+}
+.tech-list li:last-child {
+  background-color: pink;
+} */
+/* .tech-list li:nth-child(odd) {
+  background-color: pink;
+}
+.tech-list li:nth-child(even) {
+  background-color: teal;
+} */
+/* .tech-list li:nth-child(3),
+.tech-list li:nth-child(4),
+.tech-list li:nth-child(5) {
+  background-color: teal;
+} */
+
+/* .tech-list li:nth-child(odd) {
+  background-color: teal;
+} */
+/* .tech-list li:nth-child(5) {
+  background-color: teal;
+} */
+
+.tech-list li:nth-of-type(odd) {
+  background-color: red;
+}
+.blog-content::selection {
+  background-color: green;
+  color: red;
+}
+
+/* .blog-content::first-letter {
+  color: greenyellow;
+  font-size: 5rem;
+} */
+.blog-content::first-line {
+  color: red;
+}
+
+.tech-list li::marker {
+  color: blue;
+  font-size: 2rem;
+}
+
+.group {
+  color: orchid;
+}
+
+/* .group::before {
+  content: "group ";
+} */
+.group::after {
+  content: " group";
+  color: green;
+}
+
+.logo {
+  display: inline-block;
+}
+.logo::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: blueviolet;
+  transition: width 1s;
+}
+
+.logo:hover::after {
+  width: 135px;
+}

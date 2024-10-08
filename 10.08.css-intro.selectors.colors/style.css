@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(195, 191, 186);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+}
+
+.heading {
+  background-color: blueviolet;
+}
+
+.text {
+  font-size: 1.5rem;
+  color: red;
+}
+
+/* .bg-teal {
+  background-color: teal;
+} */
+
+.main-heading {
+  color: orange;
+}
+
+#main-heading {
+  color: rgb(234, 16, 52);
+}
+
+h1 {
+  color: blue !important;
+}
+
+/* !important, inline css,id, class, element, user agent */
