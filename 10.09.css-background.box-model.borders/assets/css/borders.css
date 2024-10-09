@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.heading {
+  border: 2px solid red;
+}
+
+.boxes {
+  width: 80%;
+  background-color: #ace561;
+  margin: 100px auto;
+}
+
+.boxes > .box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  /* border: 2px solid orange; */
+  border-width: 5px;
+  border-color: blueviolet;
+  /* border-style: solid; */
+  /* border-style: dotted; */
+  /* border-style: dashed; */
+  /* border-style: solid; */
+
+  /* border-top-style: dashed;
+  border-bottom-style: solid;
+  border-left-style: groove;
+  border-right-style: dotted;
+  border-top-color: red;
+  border-bottom-color: orange;
+  border-left-color: cyan;
+  border-right-color: black; */
+  border: 5px groove red;
+  border-radius: 50px;
+  /* box-sizing: border-box; */
+}
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.cards .card {
+  border: 2px solid orange;
+  width: 300px;
+  padding: 30px 15px;
+  text-align: center;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* .cards .card img.avatar {
+  width: 70%;
+  border-radius: 50%;
+}
+.card .position {
+  margin: 10px 0;
+} */
+
+/* .avatar-wrapper {
+  background-color: #b67171;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-image: url("https://pics.craiyon.com/2023-06-04/50f169348eb24ce0919dba8133c08ddc.webp");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+} */
+
+.avatar-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
