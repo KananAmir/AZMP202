@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* .fa-brands.fa-twitter {
+  font-size: 4rem;
+  color: rgb(0, 157, 255);
+} */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.discord {
+  width: 36px;
+}
+
+header {
+  border-bottom: 2px solid;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  margin: 0 1rem;
+}
+
+.header .social-icons i {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.social-icons .fa-linkedin {
+  color: #0a66c2;
+}
