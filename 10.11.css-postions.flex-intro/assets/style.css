@@ -1,0 +1,161 @@
+/* static, relative, absolute, fixed, sticky */
+
+/* static - default position value */
+
+/* relative - elementin oldugu yerdən pozisiyasını dəyişmək üçün */
+
+/* absolute - parent'ı daxilində pozisiyasını müəyyən etmək üçün (parent elementin relative, absolute, fixed dəyərlərindən birinə sahib olmalıdır) */
+
+/* fixed - elementi window'a sabitləmək üçün */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+.container {
+  /* max-width: 1200px; */
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  border-bottom: 2px solid orange;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+}
+header .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+header .header nav ul {
+  display: flex;
+}
+header .header nav ul li {
+  margin: 0 2rem;
+}
+header .header nav ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#contact {
+  margin-top: 80px;
+  padding: 3rem 0;
+}
+
+#about {
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+#about .box {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: sticky;
+  left: 90%;
+  top: 90px;
+}
+#sticky {
+  height: 3rem;
+  background-color: blue;
+  position: sticky;
+  top: 80px;
+  left: 0;
+}
+#team {
+  height: 100vh;
+  background-color: rgb(225, 142, 18);
+}
+
+.outer-box {
+  width: 75%;
+  height: 70vh;
+  border: 4px solid teal;
+  margin: 100px auto;
+  position: relative;
+}
+.wrapper {
+  width: 500px;
+  height: 50vh;
+  border: 4px solid orange;
+  margin: 0 auto;
+  /* position: relative; */
+  position: absolute;
+  left: calc(50% - 250px);
+  top: calc(50% - 25vh);
+}
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* position: relative;
+  top: 30px;
+  left: 30px; */
+
+  position: absolute;
+  /* right: 0;
+  bottom: 0; */
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  z-index: 2;
+}
+
+.wrapper .box-2 {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+.wrapper .box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  /* z-index: 9999; */
+  z-index: -1;
+}
+/* .username {
+  margin: 20px;
+} */
+
+/* .search {
+  width: 250px;
+  height: 35px;
+  padding: 0 2rem 0 1rem;
+}
+.fa-solid.fa-magnifying-glass {
+  position: relative;
+  left: -30px;
+} */
+
+.search-input-wrapper {
+  position: relative;
+  height: 36px;
+  width: 250px;
+  /* background-color: #5e3636; */
+}
+.search {
+  padding: 0 2rem 0 1rem;
+  width: 100%;
+  height: 100%;
+}
+.fa-solid.fa-magnifying-glass {
+  position: absolute;
+  font-size: 18px;
+  right: 8px;
+  top: calc(50% - 9px);
+}
