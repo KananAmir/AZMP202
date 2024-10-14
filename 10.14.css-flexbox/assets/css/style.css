@@ -1,0 +1,79 @@
+/* inline, block, inline-block, none,flex, grid */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  border: 5px solid black;
+  color: red;
+} */
+
+/* .box.box-1 {
+  display: none;
+} */
+/* .box.box-1 {
+  visibility: hidden;
+} */
+
+.flex-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  /* align-items: flex-end; */
+  /* align-items: stretch; */
+  /* gap: 2rem; */
+  /* gap: 2rem 1rem; */
+  row-gap: 20px;
+  column-gap: 20px;
+  background-color: bisque;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* flex-flow: row-reverse wrap; */
+  align-content: flex-end;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+  align-content: center;
+}
+.flex-container .box {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  border: 4px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.box.box-1 {
+  flex-grow: 5;
+  align-self: center;
+}
+.box.box-2 {
+  order: 1;
+  align-self: flex-end;
+}
+.box.box-3 {
+  order: -1;
+}
+.box.box-4 {
+  flex-grow: 1;
+}
