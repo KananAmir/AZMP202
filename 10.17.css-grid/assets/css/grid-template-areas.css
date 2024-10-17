@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  /* background-color: #2196f3; */
+}
+.grid-container > div {
+  background-color: orange;
+  padding: 2rem 0;
+  display: grid;
+  justify-items: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "home home about about projects projects projects projects"
+    "home home about about blog galery portfolio team"
+    "pricing pricing pricing pricing ebents ebents ebents ebents"
+    "customer offers contact menu ebents ebents ebents ebents";
+}
+
+.home {
+  grid-area: home;
+}
+
+.about {
+  grid-area: about;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.galery {
+  grid-area: galery;
+}
+
+.portfolio {
+  grid-area: portfolio;
+}
+
+.team {
+  grid-area: team;
+}
+
+.pricing {
+  grid-area: pricing;
+}
+
+.customer {
+  grid-area: customer;
+}
+
+.offers {
+  grid-area: offers;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.events {
+  grid-area: ebents;
+}
+
+.container > div {
+  padding: 2rem 0;
+  background-color: teal;
+}
