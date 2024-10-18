@@ -1,0 +1,71 @@
+/* transform, transition, animation */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 70%;
+  height: 60vh;
+  border: 4px solid;
+  margin: 100px auto;
+  position: relative;
+}
+
+.wrapper .box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translateX(100px);
+  transform: translateY(100px); */
+  /* transform: translateX(100px) translateY(100px); */
+  /* transform: translateX(-100px) translateY(-100px); */
+  /* transform: translateX(-50%) translateY(-50%); */
+  /* transform: translate(-50%, -50%); */
+
+  /* transition-duration: 2s; */
+  transition-duration: 3000ms;
+  transition-delay: 1s;
+  /* transition-property: all; */
+  transition-property: width, height;
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: linear; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: cubic-bezier(0.04, 0.82, 0.88, 0.32); */
+
+  transition: all 2s linear 0s;
+  /* transform: rotateX(60deg); */
+  /* transform: rotateX(90deg); */
+  /* transform: rotateX(180deg);
+  transform: rotateX(360deg); */
+  /* transform: rotateY(180deg); */
+  /* transform: rotateZ(30deg); */
+  /* transform: rotate(30deg); */
+}
+
+.wrapper .box:hover {
+  /* width: 200px;
+  height: 200px; */
+  /* transform: scaleX(1.5);
+  transform: scaleY(1.5); */
+  /* transform: scale(0.5); */
+  /* transform: scale(1.5); */
+  /* transform: skewX(30deg); */
+  /* transform: skewY(30deg); */
+}
+
+/* .box2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transform: translateY(100px);
+} */
