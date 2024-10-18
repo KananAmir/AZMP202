@@ -35,6 +35,10 @@
   animation-iteration-count: infinite;
 }
 
+.wrapper:hover .box {
+  animation-play-state: paused;
+}
+
 @keyframes move {
   from {
     transform: translateX(0);
