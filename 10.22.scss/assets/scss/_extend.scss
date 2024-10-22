@@ -1,0 +1,21 @@
+%primary-btn {
+  width: 154px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: $secondary-color;
+  color: $text-dark;
+  transition: all 1s;
+  &:hover {
+    background-color: transparent;
+    color: $secondary-color;
+  }
+}
+%secondary-btn {
+  width: 138px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: $text-white;
+  background-color: $primary-color;
+}

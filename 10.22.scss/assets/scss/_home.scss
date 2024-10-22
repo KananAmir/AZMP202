@@ -1,0 +1,28 @@
+#home-page {
+  #banner {
+    .banner {
+      // h2 {
+      //   color: blueviolet;
+      // }
+
+      .title {
+        color: blueviolet;
+        &.bg-green {
+          background-color: green;
+        }
+      }
+
+      button {
+        &.contact {
+          margin: 2rem 0;
+          @extend %primary-btn;
+          color: blue;
+        }
+        &.click-me {
+          @extend %secondary-btn;
+          background-color: teal;
+        }
+      }
+    }
+  }
+}

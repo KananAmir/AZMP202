@@ -1,0 +1,76 @@
+header {
+  background-color: teal;
+
+  @include for-phone-only {
+    background-color: $text-dark;
+  }
+
+  .header {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // @include flexBox(space-between, center);
+    // @include flexBox(space-between);
+    @include flexBox();
+    height: 85px;
+
+    h1 {
+      color: $text-white;
+      font-size: 2.5rem;
+      @media only screen and (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+        // align-items: center;
+        gap: 1rem;
+        // list-style: none;
+        li {
+          list-style-type: none;
+          a {
+            color: $text-white;
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .btns {
+      button {
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-color: transparent;
+        border: 2px solid $secondary-color;
+        color: $secondary-color;
+        transition: all 1s;
+        font-size: 1.5rem;
+
+        &:hover {
+          background-color: $secondary-color;
+          color: $text-white;
+        }
+
+        &.signup {
+          @extend %primary-btn;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+    .menu {
+      display: none;
+      .fa-bars {
+        color: $text-white;
+      }
+      @media only screen and (max-width: 767px) {
+        display: block;
+      }
+    }
+  }
+}

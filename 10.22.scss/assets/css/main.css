@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#home-page #banner .banner button.contact, header .header .btns button.signup {
+  width: 154px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #ea6357;
+  color: #000;
+  transition: all 1s;
+}
+#home-page #banner .banner button.contact:hover, header .header .btns button.signup:hover {
+  background-color: transparent;
+  color: #ea6357;
+}
+
+#home-page #banner .banner button.click-me {
+  width: 138px;
+  height: 48px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #39a4f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  background-color: teal;
+}
+@media (max-width: 599px) {
+  header {
+    background-color: #000;
+  }
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+}
+header .header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+@media only screen and (max-width: 767px) {
+  header .header h1 {
+    font-size: 1.5rem;
+  }
+}
+header .header nav ul {
+  display: flex;
+  gap: 1rem;
+}
+header .header nav ul li {
+  list-style-type: none;
+}
+header .header nav ul li a {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+}
+header .header .btns button {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #ea6357;
+  color: #ea6357;
+  transition: all 1s;
+  font-size: 1.5rem;
+}
+header .header .btns button:hover {
+  background-color: #ea6357;
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header .header .btns {
+    display: none;
+  }
+}
+header .header .menu {
+  display: none;
+}
+header .header .menu .fa-bars {
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header .header .menu {
+    display: block;
+  }
+}
+
+#home-page #banner .banner .title {
+  color: blueviolet;
+}
+#home-page #banner .banner .title.bg-green {
+  background-color: green;
+}
+#home-page #banner .banner button.contact {
+  margin: 2rem 0;
+  color: blue;
+}
+#home-page #banner .banner button.click-me {
+  background-color: teal;
+}/*# sourceMappingURL=main.css.map */
