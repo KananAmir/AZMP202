@@ -1,0 +1,41 @@
+header {
+  background-color: $bg-color-secondary;
+  .header {
+    height: 80px;
+    @include flexBox();
+    .logo {
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 2rem;
+        li {
+          a {
+            color: $color-white;
+            font-size: 1rem;
+          }
+        }
+      }
+      @include for-phone-only {
+        display: none;
+      }
+    }
+    .contact {
+      @extend %primary-btn;
+
+      @include for-phone-only {
+        display: none;
+      }
+    }
+    .menu {
+      display: none;
+
+      @include for-phone-only {
+        display: block;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
